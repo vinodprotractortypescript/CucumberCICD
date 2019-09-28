@@ -1,0 +1,38 @@
+{
+  "name": "cucumber-framework",
+  "version": "1.0.0",
+  "description": "Altan Catsoft labs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ConvertedJSfile/",
+    "clean-build": "npm run clean && npm run build",
+    "pretest": "npm run clean-build",
+    "test": "protractor ConvertedJSfile/config.js",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^4.0.7",
+    "@types/node": "^10.14.19",
+    "@types/selenium-webdriver": "^3.0.16",
+    "all-contributors-cli": "^6.9.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.5",
+    "mkdirp": "^0.5.1",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.1.3",
+    "rimraf": "^2.7.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "start": "^5.1.0",
+    "update": "^0.7.4",
+    "webdriver-manager": "^12.1.7"
+  },
+  "author": "Vinod Modewar",
+  "license": "ISC"
+}
